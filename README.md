@@ -1,11 +1,43 @@
-# Start your own "Can of Books" App
+# Can of Books
 
-This repository has starter code to begin work on creating your own online bookshelf.
+**Author**: David Suy, Jackson Gurney
+**Version**: 1.0.0
 
-## What can books do?
+## Overview
 
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
+Collection of books. Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
 
-## Use this template
+## Getting Started
 
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+-clone repo
+-update .env
+-npm i
+-npm start
+
+## Architecture
+
+-Javascript
+-CSS
+-React
+-axios
+-React Bootstrap
+
+## Change Log
+
+08-29-2022 6:00pm - Application now has a fully-functional express server, with a GET route for the location resource.
+
+## Estimates
+
+Name of feature: Add carousel
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1500
+
+Finish time: 1700
+
+Actual time needed to complete: 2 hours
+
+## Credit and Collaborations
+
+David Suy and Jackson Gurney

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Navbar, NavItem } from 'react-bootstrap';
+import React from "react";
+import { Navbar, NavItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 class Header extends React.Component {
@@ -7,10 +7,18 @@ class Header extends React.Component {
     return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand>My Favorite Books</Navbar.Brand>
-        <NavItem><Link to="/" className="nav-link">Home</Link></NavItem>
+        <NavItem style={{ display: "flex" }}>
+          <Link to="/" className="nav-link" style={{ color: "white" }}>
+            Home
+          </Link>
+
+          <Link to="/about" className="nav-link" style={{ color: "white" }}>
+            About Us
+          </Link>
+        </NavItem>
         {/* PLACEHOLDER: render a navigation link to the about page */}
       </Navbar>
-    )
+    );
   }
 }
 
