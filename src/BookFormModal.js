@@ -2,6 +2,8 @@ import { Modal } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 export default class BookForm extends React.Component {
   constructor(props) {
@@ -24,7 +26,7 @@ export default class BookForm extends React.Component {
   render() {
     return (
       <>
-        <Button onClick={this.show}>Add a Book</Button>
+        <Button onClick={this.show}><FontAwesomeIcon icon={faPlus} /></Button>
         <Modal show={this.state.show} onHide={this.handleClose}>
           <Form onSubmit={this.helper}>
             <Form.Group controlId="title">
