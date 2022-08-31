@@ -3,7 +3,9 @@ import Carousel from "react-bootstrap/Carousel";
 import axios from "axios";
 import BookForm from "./BookFormModal";
 import PutForm from "./PutData";
-import { Button } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 class BestBooks extends React.Component {
   constructor(props) {
@@ -90,7 +92,7 @@ class BestBooks extends React.Component {
             <h3>{book.title}</h3>
             <p>{book.description}</p>
             <p>{book.status ? "❤️" : "💔"}</p>
-            <Button onClick={() => this.handleDelete(book)}>Delete Book</Button>
+            <Button onClick={() => this.handleDelete(book)}><FontAwesomeIcon icon={faTrash} /></Button>
             <PutForm book={book} handlePut={this.handlePut} />
           </Carousel.Caption>
         </Carousel.Item>
