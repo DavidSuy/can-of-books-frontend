@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import axios from "axios";
 import BookForm from "./BookFormModal";
+import PutForm from "./PutData";
 import { Button } from "react-bootstrap";
 
 class BestBooks extends React.Component {
@@ -54,6 +55,24 @@ class BestBooks extends React.Component {
     });
   };
 
+  handlePut = async (book) => {
+    try {
+      let url = `${process.env.REACT_APP_SERVER}/books/${book._id}`
+      let result = await axios.put(url, book)
+      this.setState({
+        books: this.state.books.map((r) => {
+          if(r._id === result.data._id){
+            return book;
+          }
+          else{
+            return r;
+          }
+        }),
+      });
+    } catch (error) {
+      console.log(error.message)
+    }
+  }
   componentDidMount() {
     this.getBooks();
   }
@@ -70,8 +89,9 @@ class BestBooks extends React.Component {
           <Carousel.Caption>
             <h3>{book.title}</h3>
             <p>{book.description}</p>
-            {book.status ? "❤️" : "💔"}
+            <p>{book.status ? "❤️" : "💔"}</p>
             <Button onClick={() => this.handleDelete(book)}>Delete Book</Button>
+            <PutForm book={book} handlePut={this.handlePut} />
           </Carousel.Caption>
         </Carousel.Item>
       );
