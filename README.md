@@ -28,6 +28,8 @@ Collection of books. Books are life-changing. They have the power to enlighten, 
 
 ## Estimates
 
+----------
+
 Name of feature: Add carousel
 
 Estimate of time needed to complete: 2 hours
@@ -37,6 +39,32 @@ Start time: 1500
 Finish time: 1700
 
 Actual time needed to complete: 2 hours
+
+----------
+
+Name of feature: Add create book feature
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1400
+
+Finish time: 1700
+
+Actual time needed to complete: 3 hours
+
+----------
+
+Name of feature: Add delete book feature
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1700
+
+Finish time: 1800
+
+Actual time needed to complete: 1 hours
+
+----------
 
 ## Credit and Collaborations
 
@@ -128,7 +156,6 @@ Conflict Plan
 3. What work management tools?
 
 - Trello, google slides, slack are all tools we are looking to use to get our website done in a quick manner.
-
 
 ## Git Process
 
