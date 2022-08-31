@@ -5,6 +5,7 @@ import BestBooks from "./BestBooks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Profile from "./About";
+// import axios from "axios";
 
 class App extends React.Component {
   render() {
@@ -13,8 +14,8 @@ class App extends React.Component {
         <Router>
           <Header />
           <Routes>
-            <Route exact path="/" element={<BestBooks />}></Route>
-            {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
+            <Route exact path="/" element={<BestBooks/>}></Route>
+            
             <Route exact path="/about" element={<Profile />}></Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
