@@ -66,6 +66,18 @@ Actual time needed to complete: 1 hours
 
 ----------
 
+Name of feature: Edit Data
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1500
+
+Finish time: 1630
+
+Actual time needed to complete: 1 hour 30 minutes
+
+----------
+
 ## Credit and Collaborations
 
 David Suy and Jackson Gurney
